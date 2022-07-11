@@ -48,7 +48,6 @@ button {
 }
 
 .fa-solid {
-  /* color: rgb(100, 163, 247); */
   color: rgb(198, 236, 26);
 }
 
@@ -117,12 +116,10 @@ header,
 .company_brief {
   margin-top: 20px;
   color: rgb(238, 240, 228);
-  /* background-color: rgba(17, 39, 114, 0.5); */
-  padding: 20px;
 }
 
 .action_box {
-  margin-top: 20px;
+  margin-top: 50px;
   display: flex;
   align-items: center;
 }
@@ -363,7 +360,8 @@ footer li a {
   }
   .intro_container {
     display: grid;
-    grid-template-rows: 40% 20% 40%;
+    gap: 2em;
+    grid-template-rows: 40% 20% 35%;
   }
   .intro_container > div:nth-of-type(1),
   .intro_container > div:nth-of-type(2) {
@@ -388,7 +386,7 @@ footer li a {
     display: grid;
     grid-template-columns: 35% 65%;
     align-items: center;
-    padding-top: 20px;
+    /* padding-top: 20px; */
   }
   .social {
     display: flex;
