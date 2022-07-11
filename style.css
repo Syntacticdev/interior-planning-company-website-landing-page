@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400;0,500;1,400;1,500&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
+body {
+  font-family: "Finlandica", sans-serif;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -16,10 +19,21 @@ a {
   text-decoration: none;
 }
 
+.logo-box {
+  display: flex;
+  align-items: center;
+}
+
 .text_logo {
   font-family: "Permanent Marker", cursive;
-  color: rgb(9, 84, 128);
+  color: #fff;
   font-size: 25px;
+  margin-left: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
 }
 
 button {
@@ -35,11 +49,7 @@ button {
 
 .fa-solid {
   /* color: rgb(100, 163, 247); */
-  color: rgb(9, 84, 128);
-}
-
-.menu-btn:hover .fa-solid {
-  color: gold;
+  color: rgb(198, 236, 26);
 }
 
 .navigations {
@@ -82,16 +92,18 @@ button {
   border-radius: 20px;
   text-indent: 10px;
   background: transparent !important;
+  color: #fff;
 }
 
 .search_input::placeholder {
   font-weight: 700;
   font-size: 15px;
+  color: rgb(228, 199, 38);
 }
 
 header,
 .intro_container {
-  background-image: url("./assets/beautiful-modern-building-modern-architecture.jpg");
+  background-image: url("./assets/image-1.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -125,7 +137,7 @@ header,
 
 .hint {
   font-size: 30px;
-  color: rgb(121, 121, 241);
+  color: rgb(198, 236, 26);
 }
 
 .hint span {
@@ -145,7 +157,7 @@ header,
 }
 
 .services {
-  background-image: url("./assets/5431981.jpg");
+  background-image: url("./assets/image-2.jpg");
   background-size: cover;
 }
 
@@ -160,7 +172,7 @@ header,
 }
 
 .service_label {
-  color: #fff;
+  color: rgb(198, 236, 26);
   font-size: 3em;
 }
 
@@ -179,9 +191,9 @@ header,
 }
 
 .service_learn_more {
-  color: white;
+  color: rgb(198, 236, 26);
   text-decoration-line: underline;
-  text-decoration-color: #fff;
+  text-decoration-color: rgb(198, 236, 26);
   text-decoration-style: solid;
   text-decoration-thickness: 3px;
   text-underline-offset: 3px;
@@ -189,7 +201,7 @@ header,
 }
 
 .case-study {
-  background: url("./assets/low-angle-shot-corner-high-business-building.png");
+  background: url("./assets/image-3.jpg");
   background-size: cover;
   background-position: center right;
 }
@@ -226,7 +238,7 @@ header,
 }
 
 .contact {
-  background-image: url("./assets/5431981.jpg");
+  background-image: url("./assets/image-2.jpg");
   padding: 150px 0;
   background-size: cover;
   width: 100%;
@@ -271,9 +283,10 @@ form {
   border: none;
   outline: none;
   border-bottom: 2px solid white;
-  background: transparent !important;
-  width: 90%;
+  background-color: transparent !important;
+  width: 100%;
   font-size: 20px;
+  color: #fff;
 }
 
 .email_input::placeholder {
@@ -285,6 +298,8 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 20px;
+  background-image: url("./assets/image-4.jpg");
+  background-size: cover;
   gap: 1em;
 }
 
@@ -295,6 +310,7 @@ footer > div {
 
 footer h3 {
   margin-bottom: 10px;
+  color: rgb(198, 236, 26);
 }
 
 footer ul {
@@ -306,12 +322,16 @@ footer li {
 }
 
 footer li a {
-  color: gray;
+  color: rgb(255, 255, 255);
+}
+
+.ft-social {
+  margin: 10px 0;
 }
 
 .copyright {
   font-size: 15px;
-  color: rgb(70, 66, 66);
+  color: #ffff;
 }
 
 @media screen and (min-width: 760px) {
@@ -415,6 +435,10 @@ footer li a {
 
   form {
     grid-template-columns: 70% 30%;
+  }
+
+  .email_input {
+    width: 90%;
   }
 
   .submit-btn {
