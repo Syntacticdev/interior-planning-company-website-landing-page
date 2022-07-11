@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text_logo {
+  font-family: "Permanent Marker", cursive;
+  color: rgb(9, 84, 128);
+  font-size: 25px;
+}
+
+button {
+  width: fit-content;
+}
+
+.menu-btn {
+  background: transparent !important;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.fa-solid {
+  /* color: rgb(100, 163, 247); */
+  color: rgb(9, 84, 128);
+}
+
+.menu-btn:hover .fa-solid {
+  color: gold;
+}
+
+.navigations {
+  display: none;
+  list-style: none;
+}
+
+.navigations.show {
+  display: grid;
+  position: absolute;
+  right: 35px;
+  top: 60px;
+  height: 200px;
+  background-color: blueviolet;
+}
+
+.navList {
+  padding: 10px 40px;
+  margin-right: 5px;
+  background-color: rgb(100, 163, 247);
+  cursor: pointer;
+}
+
+.navList:hover {
+  background-color: blueviolet;
+}
+
+.navList a {
+  color: #fff;
+}
+
+.search {
+  display: none;
+}
+
+.search_input {
+  border: 1px solid rgb(238, 238, 194);
+  outline: none;
+  padding: 5px;
+  border-radius: 20px;
+  text-indent: 10px;
+  background: transparent !important;
+}
+
+.search_input::placeholder {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+header,
+.intro_container {
+  background-image: url("./assets/beautiful-modern-building-modern-architecture.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.intro_container {
+  min-height: 500px;
+  padding: 60px 20px;
+}
+
+.company_brief {
+  margin-top: 20px;
+  color: rgb(238, 240, 228);
+  /* background-color: rgba(17, 39, 114, 0.5); */
+  padding: 20px;
+}
+
+.action_box {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.social {
+  margin-right: 40px;
+}
+
+.fa-brands {
+  color: #fff;
+}
+
+.hint {
+  font-size: 40px;
+  color: rgb(121, 121, 241);
+}
+
+.hint span {
+  color: rgb(255, 255, 255);
+}
+
+.social_link {
+  margin-right: 10px;
+}
+
+.explore-btn {
+  background-color: rgb(121, 121, 241);
+  color: white;
+  padding: 10px 30px;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.services {
+  background-image: url("./assets/5431981.jpg");
+  background-size: cover;
+}
+
+.service_list_container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.category {
+  margin-bottom: 30px;
+}
+
+.service_label {
+  color: #fff;
+  font-size: 3em;
+}
+
+.service_category {
+  margin-top: 30px;
+}
+
+.service_type {
+  font-size: 30px;
+  color: aliceblue;
+}
+
+.service_brief {
+  margin: 10px 0 20px 0;
+  color: whitesmoke;
+}
+
+.service_learn_more {
+  color: white;
+  text-decoration-line: underline;
+  text-decoration-color: #fff;
+  text-decoration-style: solid;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3px;
+  letter-spacing: 2px;
+}
+
+.case-study {
+  background: url("./assets/low-angle-shot-corner-high-business-building.png");
+  background-size: cover;
+  background-position: center right;
+}
+
+.case-box {
+  padding: 150px 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.case h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.case h4 {
+  font-size: 20px;
+}
+
+.case p {
+  margin: 10px 0 40px 0;
+}
+
+.view-case {
+  border: 2px solid rgb(100, 100, 219);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: 700;
+  color: rgb(104, 0, 0);
+}
+
+.view-case:hover {
+  border-color: goldenrod;
+}
+
+.contact {
+  background-image: url("./assets/5431981.jpg");
+  padding: 150px 0;
+  background-size: cover;
+  width: 100%;
+}
+
+.contact h3 {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.contact-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+form {
+  width: 100%;
+  display: grid;
+}
+
+.submit-btn {
+  padding: 8px 20px;
+  border: none;
+  outline: none;
+  background-color: whitesmoke;
+  font-weight: 700;
+  border-radius: 20px;
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: rgb(228, 199, 38);
+  color: #fff;
+}
+
+.email_input {
+  padding: 5px 10px 5px 0;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid white;
+  background: transparent !important;
+  width: 90%;
+  font-size: 20px;
+}
+
+.email_input::placeholder {
+  color: #fff;
+  font-weight: 700;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+  gap: 1em;
+}
+
+footer > div {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+footer h3 {
+  margin-bottom: 10px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  margin-bottom: 10px;
+}
+
+footer li a {
+  color: gray;
+}
+
+.copyright {
+  font-size: 18px;
+  color: rgb(70, 66, 66);
+}
+
+@media screen and (min-width: 760px) {
+  header {
+    display: grid;
+    grid-template-columns: 30% 40% 20% 10%;
+  }
+
+  .text_logo {
+    font-size: 30px;
+  }
+
+  .navigations {
+    display: flex;
+  }
+
+  .navList {
+    padding: 10px 20px;
+
+    margin-right: 20px;
+  }
+
+  .search {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+  .intro_container {
+    display: grid;
+    grid-template-rows: 40% 20% 40%;
+  }
+  .intro_container > div:nth-of-type(1),
+  .intro_container > div:nth-of-type(2) {
+    display: grid;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .hint_box {
+    width: 400px;
+  }
+
+  .social_link {
+    margin-right: 20px;
+  }
+
+  .company_brief {
+    width: 400px;
+  }
+
+  .action_box {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .social {
+    display: flex;
+    justify-content: center;
+  }
+
+  .service_label {
+    color: #fff;
+    font-size: 3em;
+  }
+
+  .service_category {
+    display: flex;
+    gap: 1em;
+  }
+
+  .category {
+    width: 30%;
+  }
+
+  .service_type {
+    font-size: 30px;
+    color: aliceblue;
+  }
+
+  .service_brief {
+    margin: 20px 0 40px 0;
+    color: whitesmoke;
+  }
+
+  .case-box {
+    width: 40%;
+    padding: 150px 0;
+  }
+
+  .case {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .contact-container {
+    width: 70%;
+  }
+
+  form {
+    grid-template-columns: 70% 30%;
+  }
+
+  .submit-btn {
+    width: fit-content;
+    padding: 8px 30px;
+  }
+
+  footer {
+    grid-template-columns: 12% 12% 12% 12% 12% 30%;
+    padding: 40px;
+  }
+
+  .copyright {
+    font-weight: 700;
+  }
+}
